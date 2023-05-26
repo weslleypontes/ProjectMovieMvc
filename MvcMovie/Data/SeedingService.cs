@@ -16,10 +16,10 @@ namespace MvcMovie.Data
                     return; // DB has been seeded
                 }
 
-                Movie d1 = new Movie(new int(), "When Harry Met Sally", DateTime.Parse("1989-2-12"), "Romantic Comedy", 7.99M);
-                Movie d2 = new Movie(new int(), "Ghostbusters ", DateTime.Parse("1984-3-13"), "Comedy", 8.99M);
-                Movie d3 = new Movie(new int(), "Ghostbusters 2", DateTime.Parse("1986-2-23"), "Comedy", 9.99M);
-                Movie d4 = new Movie(new int(), "Rio Bravo", DateTime.Parse("1959-4-15"), "Western", 3.99M);
+                Movie d1 = new Movie(new int(), "When Harry Met Sally", DateTime.Parse("1989-2-12"), "Romantic Comedy", 7.99M,"R");
+                Movie d2 = new Movie(new int(), "Ghostbusters ", DateTime.Parse("1984-3-13"), "Comedy", 8.99M, "R");
+                Movie d3 = new Movie(new int(), "Ghostbusters 2", DateTime.Parse("1986-2-23"), "Comedy", 9.99M, "R");
+                Movie d4 = new Movie(new int(), "Rio Bravo", DateTime.Parse("1959-4-15"), "Western", 3.99M, "R");
 
 
                 context.Movie.AddRange(d1, d2, d3, d4);

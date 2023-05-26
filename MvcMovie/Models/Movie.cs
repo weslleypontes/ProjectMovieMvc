@@ -14,17 +14,19 @@ public class Movie
 
     [Column(TypeName = "decimal(18, 2)")]
     public decimal Price { get; set; }
+    public string Rating { get; set; }
 
     public Movie()
     {
     }
 
-    public Movie(int id, string? title, DateTime releaseDate, string? genre, decimal price)
+    public Movie(int id, string? title, DateTime releaseDate, string? genre, decimal price, string rating)
     {
         Id = id;
         Title = title;
         ReleaseDate = releaseDate;
         Genre = genre;
         Price = price;
+        Rating = rating;
     }
 }
